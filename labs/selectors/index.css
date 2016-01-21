@@ -1,0 +1,118 @@
+/*############################################################################*/
+/*
+ * Exercises:
+ *
+ * For these exercises you will need to write a selector and apply
+ * some styling properties.  Sometimes you'll be able to use any
+ * selector you wish, while other times you'll be asked to use a
+ * specific selector.
+ */
+
+/*############################################################################*/
+/* Exercise 1:
+
+   Select paragraphs that are direct children of the article tag and
+   make the first line of the paragraph uppercase:
+
+   Hint: text-transform: uppercase;
+
+   Hint: Paragraphs inside tables should not be affected.
+*/
+/*############################################################################*/
+
+
+/*############################################################################*/
+/* Exercise 2:
+
+   Select paragraphs that come directly after a header and reduce
+   their margins so they are closer to the heading.
+
+   Hint: Other paragraphs should not be affected.
+*/
+
+/*############################################################################*/
+/* Exercise 3:
+
+   Select paragraphs that are inside a table and remove all margins
+   and padding.
+
+*/
+
+/*############################################################################*/
+/* Exercise 4:
+
+   Select form inputs that have the keyboard focus and place a blue
+   border around them.
+
+*/
+
+/*############################################################################*/
+/* Exercise 5:
+
+   Select every other table row (even rows) and change their
+   background color to #eee.
+
+*/
+
+/*############################################################################*/
+/* Exercise 6:
+
+   Select the last three table rows and change their font width to
+   bold.
+
+*/
+
+/*############################################################################*/
+/* Exercise 7:
+
+   Select the unordered list near the bottom of the article tag and:
+
+     1) Change the background color for the first four list items to
+        yellow.
+
+     2) Change the background color for the last four list items to
+        orange.
+*/
+
+/*############################################################################*/
+/* Exercise 8:
+
+   For every list in the HTML (ul or ol), select every third list
+   item, starting with the first item, and make the text color red.
+   Lists with a single list item should not be affected.
+
+*/
+
+/*############################################################################*/
+/* Exercise 9:
+
+  There are two parts to this exercise:
+
+    1) Select form inputs that are text inputs and change their width
+       to 20em.
+
+    2) Select form inputs that are number inputs and change their
+       width to 5em.
+
+*/
+
+/*############################################################################*/
+/* Exercise 10:
+
+   Select all links that meet the following conditions and make their
+   text color orange.
+
+     1) The mouse is hovering over the link.
+
+     2) The href attribute for the link starts with a hash (#).
+*/
+
+/*############################################################################*/
+/* Exercise 11:
+
+   Select the first column in every fourth table row and align the
+   text to the right.  Also add the following property to each
+   selected column:
+
+     border-right: 1px solid black;
+*/

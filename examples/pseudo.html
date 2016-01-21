@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pseudo Classes</title>
+
+    <style>
+      /* <<: css */
+      li:first-child, li:last-child {
+        background-color: #eee;
+      }
+
+      li:only-child {
+        color: #f00;
+      }
+      /* :>>
+      */
+    </style>
+  </head>
+
+  <body>
+    <!-- <<: html -->
+    <ul>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+      <li>Forth</li>
+    </ul>
+    <!-- :>>
+    -->
+
+    <ul>
+      <li>Only Child</li>
+    </ul>
+  </body>
+</html>
