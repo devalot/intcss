@@ -1,5 +1,14 @@
 .spinner {
-  width: 100vw;
-  height: 100vh;
+  margin: auto;
+  width:  156px;
+  height: 156px;
   background-image: url(../../images/spinner.png);
+  background-repeat: no-repeat;
+  background-color: purple;
+
+  /* Expands to the two properties below: */
+  background-postion: 0 -156px;
+
+  background-postion-x: 0;
+  background-postion-y: -156px;
 }

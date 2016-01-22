@@ -1,0 +1,58 @@
+body > header:first-child {
+  padding-bottom: 2em;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-bottom: 2px solid #888;
+  z-index: 100;
+}
+
+body > header:first-child + * {
+  margin-top: 5em;
+}
+
+body > header > nav {
+  position: relative;
+}
+
+body > header > nav ul {
+  position: absolute;
+  right: 2em;
+  bottom: 100%;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+.sidebar.primary {
+  position: absolute;
+  width: 32vw;
+  top: 5em;
+  left: 0;
+}
+
+.sidebar.secondary {
+  position: absolute;
+  width: 32vw;
+  top: 5em;
+  right: 0;
+}
+
+main {
+  position: absolute;
+  width: 32vw;
+  top: 5em;
+  left: 34vw;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: 2px solid #888;
+  z-index: 100;
+}
