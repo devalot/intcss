@@ -1,0 +1,86 @@
+/* Floating Layout */
+body > header:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+body > header {
+  line-height: 2rem;
+}
+
+body > header h1 {
+  font-size: 2rem;
+  float: left;
+  width: 75%;
+  box-sizing: border-box;
+}
+
+body > header nav {
+  float: right;
+  list-style-type: none;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+body > header li {
+  display: inline;
+}
+
+.container:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+.sidebar {
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.sidebar.primary {
+  padding-right: 1em;
+  float: left;
+}
+
+.sidebar.secondary {
+  padding-left: 1em;
+  float: right;
+}
+
+main {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+header, p {
+  margin-bottom: 1em;
+}
+
+footer {
+  margin-top: 1em;
+  padding-top: 1em;
+  position: relative;
+  border-top: 2px solid #888;
+}
+
+footer:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+footer p {
+  width: 70%;
+  box-sizing: border-box;
+}
+
+/* Have to use positioning, bummer :( */
+footer ul {
+  width: 25%;
+  position: absolute;
+  top: 1em;
+  right: 0;
+  box-sizing: border-box;
+}

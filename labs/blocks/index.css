@@ -1,8 +1,72 @@
 /* Blocks Playground */
 
+/* Highlight the first word in paragraphs to keep track of them */
+p .first-word {
+  font-weight: bold;
+}
+
 /* Help the footer stand out */
 footer {
-  border-top: 1px solid #888;
   font-size: 1.2em;
   font-weight: bold;
 }
+
+
+/* Playing with left floating: */
+/*
+img {
+  display: none;
+}
+
+main:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+main p {
+  float: left;
+  width: 33%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+*/
+
+/* Playing with floating right: */
+/*
+img {
+  display: none;
+}
+
+main p {
+  width: 20%;
+}
+
+main p:nth-of-type(3) {
+  width: 60%;
+}
+
+main p:nth-of-type(1),
+main p:nth-of-type(3) {
+  float: left;
+}
+
+main p:nth-of-type(2) {
+  float: right;
+}
+*/
+img { max-width: 100%; }
+
+/* @media (min-width: 600px) { */
+/*   p { */
+/*     float: left; */
+/*     width: 50%; */
+/*   } */
+/* } */
+/*  */
+/* @media (min-width: 800px) and (max-width: 1199px) { */
+/*   p { */
+/*     float: left; */
+/*     width: 33%; */
+/*   } */
+/* } */
