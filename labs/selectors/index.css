@@ -19,7 +19,7 @@
    Hint: Paragraphs inside tables should not be affected.
 */
 /*############################################################################*/
-
+article > p::first-line { text-transform: uppercase; }
 
 /*############################################################################*/
 /* Exercise 2:
@@ -29,14 +29,24 @@
 
    Hint: Other paragraphs should not be affected.
 */
+header    { margin-bottom: 0;}
+header h1 { margin: 0;       }
+
+header + p {
+  margin-top: 0;
+  padding-top: 0;
+}
 
 /*############################################################################*/
 /* Exercise 3:
 
    Select paragraphs that are inside a table and remove all margins
    and padding.
-
 */
+table p {
+  margin:  0;
+  padding: 0;
+}
 
 /*############################################################################*/
 /* Exercise 4:
@@ -45,22 +55,29 @@
    border around them.
 
 */
+input:focus {
+  border: 1px solid blue;
+}
 
 /*############################################################################*/
 /* Exercise 5:
 
    Select every other table row (even rows) and change their
    background color to #eee.
-
 */
+tr:nth-child(even) {
+  background-color: #eee;
+}
 
 /*############################################################################*/
 /* Exercise 6:
 
-   Select the last three table rows and change their font width to
+   Select the last three table rows and change their font weight to
    bold.
-
 */
+tr:nth-last-child(-n+3) {
+  font-weight: bold;
+}
 
 /*############################################################################*/
 /* Exercise 7:
@@ -73,6 +90,13 @@
      2) Change the background color for the last four list items to
         orange.
 */
+article > ul li:nth-child(-n+4) {
+  background-color: yellow;
+}
+
+article > ul li:nth-last-child(-n+4) {
+  background-color: orange;
+}
 
 /*############################################################################*/
 /* Exercise 8:
@@ -80,8 +104,10 @@
    For every list in the HTML (ul or ol), select every third list
    item, starting with the first item, and make the text color red.
    Lists with a single list item should not be affected.
-
 */
+li:nth-child(3n+1):not(:only-child) {
+  color: red;
+}
 
 /*############################################################################*/
 /* Exercise 9:
@@ -93,8 +119,9 @@
 
     2) Select form inputs that are number inputs and change their
        width to 5em.
-
 */
+input[type="text"]   { width: 20em; }
+input[type="number"] { width: 5em;  }
 
 /*############################################################################*/
 /* Exercise 10:
@@ -106,6 +133,9 @@
 
      2) The href attribute for the link starts with a hash (#).
 */
+a[href^="#"]:hover {
+  color: orange;
+}
 
 /*############################################################################*/
 /* Exercise 11:
@@ -116,3 +146,7 @@
 
      border-right: 1px solid black;
 */
+tr:nth-child(4n) td:first-child {
+  text-align:   right;
+  border-right: 1px solid black;
+}
