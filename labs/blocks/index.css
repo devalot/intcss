@@ -55,18 +55,80 @@ main p:nth-of-type(2) {
   float: right;
 }
 */
+
+/* Playing with media queries for RWD: */
+/*
 img { max-width: 100%; }
 
-/* @media (min-width: 600px) { */
-/*   p { */
-/*     float: left; */
-/*     width: 50%; */
-/*   } */
-/* } */
-/*  */
-/* @media (min-width: 800px) and (max-width: 1199px) { */
-/*   p { */
-/*     float: left; */
-/*     width: 33%; */
-/*   } */
-/* } */
+@media (min-width: 600px) {
+  p {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+  p {
+    float: left;
+    width: 33%;
+  }
+}
+*/
+
+/*
+img { display: none; }
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+main p {
+  border: 1px solid red;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+main p:nth-of-type(2) {
+  order: 1;
+}
+
+main p:nth-of-type(1) {
+  order: 2;
+  flex-grow: 2;
+}
+
+main p:nth-of-type(3) {
+  order: 3;
+}
+*/
+
+@keyframes prank {
+  0% {
+  }
+
+  50% {
+    transform: rotate(22.5deg);
+  }
+
+  75% {
+    transform-origin: left top;
+    transform: rotate(45deg) scale(0.5);
+  }
+
+  100% {
+    opacity: 0;
+    color: red;
+  }
+}
+
+
+p:nth-of-type(1):hover {
+  animation-name: prank;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
