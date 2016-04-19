@@ -1,0 +1,41 @@
+/*############################################################################*/
+/*
+ * Exercises:
+ *
+ * For these exercises you will need to write a selector and apply
+ * some styling properties.  Sometimes you'll be able to use any
+ * selector you wish, while other times you'll be asked to use a
+ * specific selector.
+ */
+
+/*############################################################################*/
+/* Exercise 1:
+
+   Select paragraphs that are direct children of the article tag and
+   make the first line of the paragraph bold:
+
+   Hint: font-weight: bold;
+
+   Hint: Paragraphs inside tables should not be affected.
+*/
+
+
+
+/*############################################################################*/
+/* Exercise 2:
+
+   Select paragraphs that directly follow tables (siblings) and add a
+   left border on the paragraph that is 3 pixels wide, solid, and
+   green.
+
+   Hint: Other paragraphs should not be affected.
+*/
+
+
+
+/*############################################################################*/
+/* Exercise 3:
+
+   Select paragraphs that are inside a table and remove all margins
+   and padding.
+*/

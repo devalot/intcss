@@ -11,46 +11,6 @@
 /*############################################################################*/
 /* Exercise 1:
 
-   Select paragraphs that are direct children of the article tag and
-   make the first line of the paragraph uppercase:
-
-   Hint: text-transform: uppercase;
-
-   Hint: Paragraphs inside tables should not be affected.
-*/
-/*############################################################################*/
-article > p::first-line { text-transform: uppercase; }
-
-/*############################################################################*/
-/* Exercise 2:
-
-   Select paragraphs that come directly after a header and reduce
-   their margins so they are closer to the heading.
-
-   Hint: Other paragraphs should not be affected.
-*/
-header    { margin-bottom: 0;}
-header h1 { margin: 0;       }
-
-header + p {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-/*############################################################################*/
-/* Exercise 3:
-
-   Select paragraphs that are inside a table and remove all margins
-   and padding.
-*/
-table p {
-  margin:  0;
-  padding: 0;
-}
-
-/*############################################################################*/
-/* Exercise 4:
-
    Select form inputs that have the keyboard focus and place a blue
    border around them.
 
@@ -60,7 +20,7 @@ input:focus {
 }
 
 /*############################################################################*/
-/* Exercise 5:
+/* Exercise 2:
 
    Select every other table row (even rows) and change their
    background color to #eee.
@@ -70,7 +30,7 @@ tr:nth-child(even) {
 }
 
 /*############################################################################*/
-/* Exercise 6:
+/* Exercise 3:
 
    Select the last three table rows and change their font weight to
    bold.
@@ -80,7 +40,7 @@ tr:nth-last-child(-n+3) {
 }
 
 /*############################################################################*/
-/* Exercise 7:
+/* Exercise 4:
 
    Select the unordered list near the bottom of the article tag and:
 
@@ -99,7 +59,7 @@ article > ul li:nth-last-child(-n+4) {
 }
 
 /*############################################################################*/
-/* Exercise 8:
+/* Exercise 5:
 
    For every list in the HTML (ul or ol), select every third list
    item, starting with the first item, and make the text color red.
@@ -110,7 +70,7 @@ li:nth-child(3n+1):not(:only-child) {
 }
 
 /*############################################################################*/
-/* Exercise 9:
+/* Exercise 6:
 
   There are two parts to this exercise:
 
@@ -124,7 +84,9 @@ input[type="text"]   { width: 20em; }
 input[type="number"] { width: 5em;  }
 
 /*############################################################################*/
-/* Exercise 10:
+/* Exercise 7:
+
+   FIXME: make this harder...
 
    Select all links that meet the following conditions and make their
    text color orange.
@@ -138,7 +100,7 @@ a[href^="#"]:hover {
 }
 
 /*############################################################################*/
-/* Exercise 11:
+/* Exercise 8:
 
    Select the first column in every fourth table row and align the
    text to the right.  Also add the following property to each
