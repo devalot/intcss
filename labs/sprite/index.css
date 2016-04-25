@@ -1,5 +1,27 @@
+body {
+  background-color: pink;
+}
+
+@keyframes spin {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 -2808px;
+    /* transform: translate(0, 400px); */
+  }
+}
+
 .spinner {
-  width: 100vw;
-  height: 100vh;
+  width: 156px;
+  height: 156px;
   background-image: url(../../images/spinner.png);
+  background-repeat: no-repeat;
+
+  animation-name: spin;
+ animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: steps(18);
 }

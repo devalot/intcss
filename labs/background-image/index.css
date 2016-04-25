@@ -1,12 +1,25 @@
-html { background-color: #1b1322; }
+html {
+  background-color: #1b1322;
+  color: #fff;
+}
 
 h1 {
   color: #eee;
-  height: 100vh;
   text-align: center;
   text-shadow: 1px 1px 1px #fff, 2px 2px 2px #111;
 }
 
 .logo {
   background-image: url(../../images/haskell.png);
+  background-repeat: no-repeat;
+
+  border: 2px solid blue;
+  transition-property: all;
+  transition-duration: 2000ms;
+  transition-timing-function: ease-in-out;
+}
+
+.logo:active {
+  border: 5px solid red;
+  transform: scale(3.0);
 }
