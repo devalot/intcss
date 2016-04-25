@@ -15,100 +15,33 @@
    border around them.
 
 */
-input:focus {
-  border: 1px solid blue;
-}
+
 
 /*############################################################################*/
 /* Exercise 2:
 
-   Select every other table row (even rows) and change their
-   background color to #eee.
+   Select disabled form inputs and put a line through their text.
+
+   Hint: text-decoration: line-through;
 */
-tr:nth-child(even) {
-  background-color: #eee;
-}
+
 
 /*############################################################################*/
 /* Exercise 3:
 
-   Select the last three table rows and change their font weight to
-   bold.
+   Select paragraphs that are direct children of the article tag and
+   change the first letter of text so its font size is 2em.
+
+   Hint: Paragraphs inside tables should not be affected.
 */
-tr:nth-last-child(-n+3) {
-  font-weight: bold;
-}
+
 
 /*############################################################################*/
 /* Exercise 4:
 
-   Select the unordered list near the bottom of the article tag and:
+   When the user selects text in a paragraph with their mouse, the
+   background color of the text should be #009 and the foreground
+   color should be #fff.
 
-     1) Change the background color for the first four list items to
-        yellow.
-
-     2) Change the background color for the last four list items to
-        orange.
+   Hint: Only style the user selection if it's in a paragraph.
 */
-article > ul li:nth-child(-n+4) {
-  background-color: yellow;
-}
-
-article > ul li:nth-last-child(-n+4) {
-  background-color: orange;
-}
-
-/*############################################################################*/
-/* Exercise 5:
-
-   For every list in the HTML (ul or ol), select every third list
-   item, starting with the first item, and make the text color red.
-   Lists with a single list item should not be affected.
-*/
-li:nth-child(3n+1):not(:only-child) {
-  color: red;
-}
-
-/*############################################################################*/
-/* Exercise 6:
-
-  There are two parts to this exercise:
-
-    1) Select form inputs that are text inputs and change their width
-       to 20em.
-
-    2) Select form inputs that are number inputs and change their
-       width to 5em.
-*/
-input[type="text"]   { width: 20em; }
-input[type="number"] { width: 5em;  }
-
-/*############################################################################*/
-/* Exercise 7:
-
-   FIXME: make this harder...
-
-   Select all links that meet the following conditions and make their
-   text color orange.
-
-     1) The mouse is hovering over the link.
-
-     2) The href attribute for the link starts with a hash (#).
-*/
-a[href^="#"]:hover {
-  color: orange;
-}
-
-/*############################################################################*/
-/* Exercise 8:
-
-   Select the first column in every fourth table row and align the
-   text to the right.  Also add the following property to each
-   selected column:
-
-     border-right: 1px solid black;
-*/
-tr:nth-child(4n) td:first-child {
-  text-align:   right;
-  border-right: 1px solid black;
-}

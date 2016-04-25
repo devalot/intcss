@@ -12,13 +12,12 @@
 /* Exercise 1:
 
    Select paragraphs that are direct children of the article tag and
-   make the first line of the paragraph bold:
+   change the font family to fantasy.
 
-   Hint: font-weight: bold;
+   Hint: font-family: fantasy;
 
    Hint: Paragraphs inside tables should not be affected.
 */
-
 
 
 /*############################################################################*/
@@ -38,4 +37,15 @@
 
    Select paragraphs that are inside a table and remove all margins
    and padding.
+*/
+
+
+/*############################################################################*/
+/* Exercise 4:
+
+   Select all paragraphs that come after an h2 tag that are siblings
+   of the h2 and set a left padding of 1.5em.
+
+   Hint: Other paragraphs should not be affected (i.e. the p tags
+   inside ol tags).
 */

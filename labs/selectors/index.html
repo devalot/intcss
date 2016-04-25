@@ -4,21 +4,26 @@
     <title>Selectors</title>
     <link href="part-01.css" rel="stylesheet">
     <link href="part-02.css" rel="stylesheet">
+    <link href="part-03.css" rel="stylesheet">
+    <link href="part-04.css" rel="stylesheet">
+    <link href="part-05.css" rel="stylesheet">
   </head>
 
   <body>
     <header>
       <nav>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <ul>
+          <li><a href="http://www.salesforce.com/">Home</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#products">Products</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <article>
         <header>
-          <h1>Box Model Example</h1>
+          <h1>Main Article</h1>
         </header>
 
         <p>
@@ -154,9 +159,25 @@
         <ol>
           <li>Nulla facilisis, risus a rhoncus fermentum, tellus tellus.</li>
         </ol>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          Donec hendrerit tempor tellus.  Donec pretium posuere
+          tellus.  Proin quam nisl, tincidunt et, mattis eget,
+          convallis nec, purus.  Cum sociis natoque penatibus et
+          magnis dis parturient montes, nascetur ridiculus mus.  Nulla
+          posuere.  Donec vitae dolor.  Nullam tristique diam non
+          turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam
+          vestibulum accumsan nisl.
+        </p>
+
+        <ol>
+          <li><p>Phasellus lacus.</p></li>
+          <li><p>Tristique diam non turpis.</p></li>
+        </ol>
       </article>
 
-      <section>
+      <section id="feedback">
         <header>
           <h1>Feedback</h1>
         </header>
@@ -172,9 +193,39 @@
           </div>
           <div>
             <label>Favorite Color:</label>
-            <input type="text" name="color">
+            <input type="text" name="color" value="">
+          </div>
+          <div>
+            <label>Favorite Language:</label>
+            <input type="text" name="color" value="JavaScript" disabled>
           </div>
         </form>
+      </section>
+
+      <section id="products">
+        <header>
+          <h1>Products</h1>
+        </header>
+
+        <ul>
+          <li data-product-id="1">Phasellus lacus</li>
+          <li data-product-id="2">Condimentum, magna ut suscipit hendrerit</li>
+        </ul>
+
+        <ul>
+          <li class="product" data-keywords="foo bar hot">Sed id ligula quis est convallis tempor</li>
+          <li class="product" data-keywords="baz boo faz">Proin quam nisl, tincidunt et, mattis eget</li>
+        </ul>
+
+        <p>
+          Integer placerat tristique nisl.  Sed bibendum.  Aliquam
+          feugiat tellus ut neque.
+        </p>
+
+        <p>
+          Nullam tristique diam non turpis.  Nam euismod tellus id
+          erat.  Phasellus lacus.
+        </p>
       </section>
     </main>
   </body>
