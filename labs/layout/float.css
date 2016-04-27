@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+
+body > header > h1 {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+body > header li {
+  display: inline;
+}
+
+body > header::after {
+  content: " ";
+  display: table;
+  clear: both;
+  margin-bottom: 1em;
+}
+
+.sidebar {
+  width: 25%;
+  float: left;
+  padding: 0 10px;
+}
+
+main {
+  width: 50%;
+  float: left;
+}
+
+main h2 {
+  margin-top: 1em;
+}
+
+@media (max-width: 420px) {
+  .sidebar, main {
+    float: none;
+    width: 100%;
+  }
+}
