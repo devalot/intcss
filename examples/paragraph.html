@@ -5,28 +5,46 @@
 
     <style>
       /* <<: css */
-      /* First (visible) line: */
-      p::first-line {
-        color: red;
-      }
+/* First (visible) line: */
+p::first-line {
+  color: red;
+}
 
-      /* First character: */
-      p::first-letter {
-        font-size:   4em;
-        font-weight: bold;
-      }
-      /* :>>
+/* First character: */
+p::first-letter {
+  font-size:   4em;
+  font-weight: bold;
+}
+
+html {
+  font-size: 12px;
+}
+
+p.up-here {
+  font-size: 32px;
+  border: 2px solid blue;
+  transform: scale(2);
+  transform-origin: bottom right;
+}
+
+.extra {
+  font-size: 1.5em;
+}      /* :>>
       */
     </style>
   </head>
 
   <body>
     <!-- <<: html -->
-    <p>
+    <p class="up-here">
+    lkjfda;lfja;lfjdal;jf ;adsljf;adljkf;dljkd;lfj;ldj.
+    </p>
+
+    <p class="down-here">
       Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
       potenti.  Aenean in sem ac leo mollis blandit.  Donec neque
       quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus
-      lacus.
+      lacus. <span class="extra">Hello</span>
     </p>
     <!-- :>>
     -->
