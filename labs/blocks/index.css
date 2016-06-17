@@ -6,3 +6,18 @@ footer {
   font-size: 1.2em;
   font-weight: bold;
 }
+
+img {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  border: 2px solid black;
+  margin: 3px;
+  flex: 1 1 250px;
+}

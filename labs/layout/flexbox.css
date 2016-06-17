@@ -1,0 +1,52 @@
+body > header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em 0.5em;
+}
+
+body > header h1 {
+  flex-grow: 8;
+  flex-shrink: 4;
+  text-align: center;
+}
+
+body > header nav {
+  flex-grow: 4;
+  flex-shrink: 8;
+}
+
+body > header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  line-height: 1.5em;
+}
+
+body > header li {
+  padding: 0.25em;
+}
+
+.container {display: flex;}
+
+.sidebar { flex: 3 6; padding: 0 0.25em}
+main { flex: 6 3; padding: 0 0.5em }
+main h2 { margin-top: 1em; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section { flex: 1 1; padding: 1em; }
+footer p:nth-child(n+2) { margin-top: 1em;}
+
+@media (max-width: 400px) {
+  .container {
+    flex-direction: column;
+  };
+
+  main               { order: 1; }
+  .sidebar.primary   { order: 2; }
+  .sidebar.secondary { order: 3; }
+}

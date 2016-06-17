@@ -1,0 +1,35 @@
+body > header + * {margin-top: 5em;}
+
+body > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border: 2px solid black;
+  background-color: #fff;
+  z-index: 10;
+}
+
+body > header h1 {padding: 0.5em;}
+
+body > header nav {
+  position: absolute;
+  top: 1em;
+  right: 0;
+  padding: 0.5em;
+}
+
+body > header ul li {display: inline;}
+.container {margin-bottom: 15em;}
+
+footer {
+  padding: 0.5em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid black;
+  background-color: #fff;
+  z-index: 10;
+}

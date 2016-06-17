@@ -1,0 +1,38 @@
+* { box-sizing: border-box;}
+
+body > header h1 {
+  width: 66%;
+  float: left;
+}
+
+body > header nav {
+  width: 33%;
+  float: right;
+}
+
+body > header li {
+  display: inline;
+  line-height: 2em;
+}
+
+header { padding: 1em; }
+
+body > header::after, .content::after
+{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.sidebar {
+  width: 25%;
+  float: left;
+  padding: 1em;
+}
+
+main {
+  border: 2px solid black;
+  width: 50%;
+  float: left;
+  padding: 1em;
+}
