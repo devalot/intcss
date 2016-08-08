@@ -60,7 +60,7 @@
 /*############################################################################*/
 /* Exercise 5:
 
-   Select elements that have class of "product" and also have the word
+   Select elements that have a "product" class and also have the word
    "hot" listed in the "data-keywords" attribute.  Change the
    background color of matching elements to "hotpink".
 
