@@ -18,6 +18,9 @@
 
    Hint: Paragraphs inside tables should not be affected.
 */
+article > p {
+  font-family: fantasy;
+}
 
 
 /*############################################################################*/
@@ -29,7 +32,9 @@
 
    Hint: Other paragraphs should not be affected.
 */
-
+table + p {
+  border-left: 3px solid green;
+}
 
 
 /*############################################################################*/
@@ -38,7 +43,10 @@
    Select paragraphs that are inside a table and remove all margins
    and padding.
 */
-
+table p {
+  margin: 0;
+  padding: 0;
+}
 
 /*############################################################################*/
 /* Exercise 4:
@@ -49,3 +57,6 @@
    Hint: Other paragraphs should not be affected (i.e. the p tags
    inside ol tags).
 */
+h2 ~ p {
+  padding-left: 1.5em;
+}

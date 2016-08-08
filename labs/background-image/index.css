@@ -1,4 +1,6 @@
-html { background-color: #1b1322; }
+html { background-color: #1b1322; color: #fff; }
+
+body { margin: 0; padding: 0; }
 
 h1 {
   color: #eee;
@@ -8,5 +10,22 @@ h1 {
 }
 
 .logo {
-  background-image: url(../../images/haskell.png);
+  margin: 20px;
+  padding: 20px;
+
+  border: 10px solid rgba(255, 255, 255, 0.8);
+
+  /* background-image: url(../../images/haskell.png); */
+  background-repeat: no-repeat;
+  background-color: red;
+
+  /* background-position: 100px; */
+
+  /* background-origin: padding-box; */
+  /* background-origin: content-box; */
+  background-origin: content-box;
+
+  /* background-clip: content-box; */
+
+  background-attachment: fixed;
 }
