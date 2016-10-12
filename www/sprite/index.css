@@ -1,5 +1,34 @@
+body  {
+  background-color: pink;
+}
+
+@keyframes spin {
+  0%   {background-position: 0  0;}
+  100% {background-position: 0 100%;}
+}
+
+@keyframes colors {
+  0%   { background-color: pink;    }
+  100% { background-color: hotpink; }
+}
+
+@keyframes move {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(200px, 200px) rotate(180deg); }
+}
+
 .spinner {
-  width: 100vw;
-  height: 100vh;
+  width: 156px;
+  height: 156px;
+
   background-image: url(../images/spinner.png);
+  background-repeat: no-repeat;
+
+  animation-name: spin, move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal, alternate;
+
+  /* What timing function should you use? */
+  animation-timing-function: steps(18), ease-in-out;
 }

@@ -1,0 +1,48 @@
+body > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 1em;
+  background-color: #fff;
+  border-bottom: 1px solid #888;
+}
+
+/* Push the nav off to the right */
+body > header > nav {
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+}
+
+/* Make <li> elements
+   render side-by-side */
+body > header > nav li {
+  display: inline;
+}
+
+/* Push all content below the header
+   down so you can see it! */
+body > header + * {
+  /* Total hack! */
+  margin-top: 8em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 1em;
+  background-color: #fff;
+  border-top: 1px solid #888;
+}
+
+/* Hack to make space at the bottom of the
+   page so the footer doesn't cover up
+   the last elements. */
+.container {
+  margin-bottom: 20em;
+}
