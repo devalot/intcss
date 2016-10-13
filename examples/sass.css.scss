@@ -1,15 +1,13 @@
 $background-color: #eee;
 $foreground-color: #000;
 
-/* This is interesting */
-table.spec {
+body > header {
   border: 1px;
   color: $foreground-color;
   background-color: $background-color;
 
-  tr {
-    padding: 5px;
-  }
+  nav { position: absolute; }
+  nav li { display: inline; }
 
   animation: {
     name: foo;
@@ -18,3 +16,6 @@ table.spec {
 }
 
 p { padding: 10px;}
+
+// Compile with:
+// sassc -t expanded examples/sass.css.scss
