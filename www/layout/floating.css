@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+
+body > header { padding: 10px; }
+
+body > header > h1 {
+  float: left;
+  width: 50%;
+}
+
+body > header > nav {
+  float: right:
+  width: 50%;
+}
+
+body > header ul { text-align: right; }
+
+body > header li {
+  line-height: 2em;
+  display: inline;
+}
+
+body > header::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.container > * {
+  float: left;
+  padding: 0 5px;
+}
+
+.container::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.sidebar { width: 25%; }
+main     { width: 50%; }
+
+footer {margin-top: 1em; padding: 0 5px;}
+footer > * { float: left; width: 50%; }
+footer p:not(:first-child) { margin-top: 1em; }
