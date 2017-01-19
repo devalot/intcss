@@ -1,0 +1,26 @@
+body > header {
+  position: fixed;
+  height: 2em;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid #444;
+  background-color: #fff;
+  z-index: 10;
+}
+
+body > header + * {
+  margin-top: 3em;
+}
+
+body > header > nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body > header li {
+  display: inline;
+  margin-right: 1em;
+  line-height: 2em;
+}
