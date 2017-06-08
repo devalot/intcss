@@ -1,5 +1,29 @@
+@keyframes spinner {
+  0%   { background-position-y: 0;       }
+  100% { background-position-y: -2964px; }
+}
+
+@keyframes fancy {
+  50%  {
+    transform: translate(80%, 40%);
+  }
+
+  100% {
+    transform: rotate(180deg)
+               scale(0.1)
+               translateY(100%);
+  }
+}
+
 .spinner {
-  width: 100vw;
-  height: 100vh;
   background-image: url(../images/spinner.png);
+  background-repeat: no-repeat;
+  width:  156px;
+  height: 156px;
+
+  animation-name: spinner, fancy;
+  animation-direction: normal, alternate;
+  animation-duration: 1s, 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(19), ease;
 }

@@ -2,5 +2,19 @@
 
 .icon {
   height: 48px;
+  width: 48px;
   background-image: url(../images/icons.png);
+  background-repeat: no-repeat;
+}
+
+.icon.thumbs-up {
+  background-position-x: -48px;
+}
+
+.icon.shopping-cart {
+  background-position-x: -96px;
+}
+
+.icon.note-list {
+  background-position-x: -144px;
 }
