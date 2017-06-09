@@ -1,0 +1,27 @@
+body > header {
+  background-color: white;
+  border-bottom: 2px solid #444;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+body > header h1 {
+  /* position: absolute; */
+  /* left: 0; */
+}
+
+body > header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body > header li {
+  display: inline;
+}
+
+.container {
+  margin-top: 5em;
+}

@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+p { margin: 1em 0;          }
+
+body > header {
+  border-bottom: 2px solid #444;
+  padding: 0.5em;
+}
+
+body > header::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+body > header h1 {float: left;}
+body > header nav {float: right;}
+
+body > header li {
+  display: inline;
+  margin-left: 0.5em;
+  line-height: 2em;
+}
+
+.sidebar, main {
+  float: left;
+  width: 25%;
+  padding: 0.25em;
+}
+
+main { width: 50%; }
+
+.container {
+  content: " ";
+  display: table;
+  clear: both;
+}
